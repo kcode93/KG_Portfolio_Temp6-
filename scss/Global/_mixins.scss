@@ -1,0 +1,32 @@
+//sets font color based on the background's darkness
+@function set-font-color($background-color) {
+	@if (blackness($background-color) >= 50) {
+		@return #fff;
+	} @else {
+		@return #000;
+	}
+}
+
+//Background image with Dark Overlay -- ($opacity range: 0.1 - 1.0)
+@function bg-img-dark-overlay($imagePath, $opacity1, $opacity2) {
+	@return linear-gradient(rgba(0, 0, 0, $opacity1), rgba(0, 0, 0, $opacity2)),
+		url($imagePath);
+}
+
+//centers element right on the center, the parent needs to be Positioned relative.
+@mixin absoluteCenter {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+//dark overlay (requires dark-overlay div inside relative parent)
+@mixin dark-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+}
