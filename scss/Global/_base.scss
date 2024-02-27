@@ -1,1 +1,30 @@
 //Custom Styles Here
+body {
+	font-family: $primary-font;
+	background-color: $secondary;
+	color: $body-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: $heading-color;
+	font-weight: 700;
+}
+
+a {
+	text-decoration: none;
+	color: $body-color;
+	transition: all 0.5s ease-in-out;
+
+	&:hover {
+		color: $primary-brand-color;
+	}
+}
+
+img {
+	width: 100%;
+}

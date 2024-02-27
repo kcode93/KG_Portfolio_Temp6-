@@ -1,14 +1,18 @@
 /** Colors **/
-$primary: #0a8fc1;
-$secondary: #0a34c1;
+$primary: #033f47;
+$secondary: #022a30;
+$primary-brand-color: #e0f780;
+$secondary-brand-color: #deff58;
 $dark: #333;
 $light: #f4f4f4;
+$body-color: #b6cbce;
+$heading-color: #eef3db;
 
 /** Units of Measure **/
-//$container-width: example;
+$side-bar-width: 15rem;
 
 /** Fonts **/
-//$primary-font: example;
+$primary-font: 'Bai Jamjuree', sans-serif;
 //$secondary-font: example;
 //$font-size-dmc: 1rem;
 
@@ -29,15 +33,6 @@ $spacers: (
 	7: $spacer * 9,
 	8: $spacer * 12,
 ) !default;
-
-//Container
-//$container-max-widths: (
-//	sm: 540px,
-// 	md: 720px,
-// 	lg: 960px,
-// 	xl: 980px,
-// 	xxl: 1400px,
-//) !default;
 
 //navbar
 //$navbar-toggler-focus-width: 0.5rem !default;
