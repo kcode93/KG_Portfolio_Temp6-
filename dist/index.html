@@ -25,12 +25,83 @@
 			href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
 			rel="stylesheet"
 		/>
+		<!--Animate On Scroll CDN-->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 		<!--Custom style sheets-->
 		<link rel="stylesheet" href="./resources/css/style.css" type="text/css" />
 		<title>Kenneth Garcia | Web Dev Portfolio</title>
 	</head>
 	<body>
-		<h1>Hello World!</h1>
+		<!--navbar-->
+		<nav id="main-nav" class="navbar navbar-expand-lg bg-primary shadow-lg">
+			<div
+				class="container d-lg-flex flex-lg-column align-content-lg-center justify-content-lg-center text-lg-center"
+			>
+				<a
+					class="navbar-brand d-lg-flex justify-content-lg-center text-center mx-lg-auto"
+					href="#home"
+				>
+					<h3 class="fw-bold d-block d-lg-none">
+						<span class="text-brand-color-primary">Kenneth</span>
+						Garcia
+					</h3>
+					<img
+						src="./resources/img/Logos/SVG/KG_LOGO_DARK-FILL.svg"
+						class="d-none d-lg-block nav-logo mx-lg-auto"
+						alt="Kenneth Garcia (Kcode93) Logo"
+					/>
+				</a>
+
+				<div class="hstack gap-3 me-3 mx-lg-auto d-none d-sm-flex">
+					<a href="https://www.facebook.com">
+						<i class="fab fa-facebook fa-2x"></i>
+					</a>
+					<a href="https://www.instagram.com">
+						<i class="fab fa-instagram fa-2x"></i>
+					</a>
+					<a href="https://www.github.com">
+						<i class="fab fa-github fa-2x"></i>
+					</a>
+					<a href="https://linkedin.com">
+						<i class="fab fa-linkedin fa-2x"></i>
+					</a>
+				</div>
+
+				<button
+					class="navbar-toggler d-lg-none"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#collapseNav"
+					aria-controls="collapseNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="collapseNav">
+					<ul
+						class="navbar-nav d-lg-flex text-lg-center flex-lg-column justify-content-lg-center align-items-lg-center ms-auto mt-lg-4"
+					>
+						<li class="nav-item">
+							<a class="nav-link fs-4" href="#home">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link fs-4" href="#about">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link fs-4" href="#work">Work</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link fs-4" href="#services">Services</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link fs-4" href="#contact">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 
 		<!-- Bootstrap JS & Popper JS -->
 		<script
@@ -43,6 +114,8 @@
 			integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
 			crossorigin="anonymous"
 		></script>
+		<!--Animate On Scroll Script-->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<!-- Custom JS Scripts -->
 		<script src="./resources/js/main.js"></script>
 	</body>

@@ -1,20 +1,23 @@
 /** Colors **/
 $primary: #033f47;
 $secondary: #022a30;
-$primary-brand-color: #e0f780;
-$secondary-brand-color: #deff58;
+$brand-color-primary: #e0f780;
+$brand-color-secondary: #deff58;
 $dark: #333;
 $light: #f4f4f4;
 $body-color: #b6cbce;
 $heading-color: #eef3db;
 
 /** Units of Measure **/
-$side-bar-width: 15rem;
+//navbar
+$side-bar-width: clamp(15rem, 18rem, 20rem);
+$nav-linear-grad-opacity: 0.9;
+$nav-logo-width: clamp(8rem, 10rem, 12rem);
+$nav-logo-height: clamp(8rem, 10rem, 12rem);
 
 /** Fonts **/
 $primary-font: 'Bai Jamjuree', sans-serif;
 //$secondary-font: example;
-//$font-size-dmc: 1rem;
 
 /** Utilities **/
 
@@ -35,7 +38,6 @@ $spacers: (
 ) !default;
 
 //navbar
-//$navbar-toggler-focus-width: 0.5rem !default;
-//$navbar-light-color: $primary !default;
-//$navbar-light-icon-color: $secondary !default;
-//$navbar-light-toggler-border-color: $primary !default;
+$navbar-light-color: $brand-color-primary !default;
+$navbar-light-icon-color: $brand-color-secondary !default;
+$navbar-light-toggler-border-color: $brand-color-secondary !default;

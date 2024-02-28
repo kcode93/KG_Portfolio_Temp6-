@@ -1,12 +1,12 @@
-/** Variables **/
+/** Variables & Base Styles **/
 @import 'Global/variables';
+@import 'Global/base';
 
 /** Bootstrap Source Files **/
 @import '../node_modules/bootstrap/scss/bootstrap';
 
 /** Global Styles, Mixins and Functions **/
 @import 'Global/mixins';
-@import 'Global/base';
 
 /** Page Layouts **/
 @import 'Layouts/header';

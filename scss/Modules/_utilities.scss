@@ -1,1 +1,20 @@
 //Custom Styles Here
+.text-brand-color {
+	&-primary {
+		color: $brand-color-primary;
+	}
+
+	&-secondary {
+		color: $brand-color-secondary;
+	}
+}
+
+.bg-brand-color {
+	&-primary {
+		background-color: $brand-color-primary;
+	}
+
+	&-secondary {
+		background-color: $brand-color-secondary;
+	}
+}

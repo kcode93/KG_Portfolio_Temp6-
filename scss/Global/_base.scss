@@ -1,7 +1,7 @@
 //Custom Styles Here
 body {
-	font-family: $primary-font;
-	background-color: $secondary;
+	font-family: $primary-font !important;
+	background-color: $secondary !important;
 	color: $body-color;
 }
 
@@ -11,20 +11,26 @@ h3,
 h4,
 h5,
 h6 {
-	color: $heading-color;
+	color: $heading-color !important;
 	font-weight: 700;
 }
 
 a {
 	text-decoration: none;
-	color: $body-color;
+	color: $body-color !important;
 	transition: all 0.5s ease-in-out;
 
 	&:hover {
-		color: $primary-brand-color;
+		color: $brand-color-primary !important;
 	}
 }
 
 img {
-	width: 100%;
+	display: block !important;
+	width: 100% !important;
+	max-width: 100% !important;
+}
+
+div {
+	//border: 2px solid white;
 }
