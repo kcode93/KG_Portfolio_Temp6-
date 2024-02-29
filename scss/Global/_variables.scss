@@ -10,7 +10,8 @@ $heading-color: #eef3db;
 
 /** Units of Measure **/
 //navbar
-$side-bar-width: clamp(15rem, 18rem, 20rem);
+$side-bar-width: clamp(10rem, 15rem, 20rem);
+$content-wrapper-left-padding: $side-bar-width;
 $nav-linear-grad-opacity: 0.9;
 $nav-logo-width: clamp(8rem, 10rem, 12rem);
 $nav-logo-height: $nav-logo-width;

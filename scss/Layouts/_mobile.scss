@@ -39,7 +39,7 @@
 
 // Medium devices (tablets, 768px and up)
 @include media-breakpoint-up(md) {
-	//Custom Styles HERE
+	//here
 }
 
 // Large devices (desktops, 992px and up)
@@ -47,8 +47,16 @@
 	#main-nav {
 		min-height: 100vh;
 		width: $side-bar-width;
-		// background: linear-gradient(rgba(0, 0, 0, $nav-linear-grad-opacity), rgba(0, 0, 0, $nav-linear-grad-opacity)),
-		// url($);
+	}
+
+	#content-wrapper {
+		padding-left: $side-bar-width;
+
+		#home {
+			.container {
+				max-width: 98% !important;
+			}
+		}
 	}
 }
 
