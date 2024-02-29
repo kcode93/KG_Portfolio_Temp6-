@@ -13,7 +13,7 @@ $heading-color: #eef3db;
 $side-bar-width: clamp(15rem, 18rem, 20rem);
 $nav-linear-grad-opacity: 0.9;
 $nav-logo-width: clamp(8rem, 10rem, 12rem);
-$nav-logo-height: clamp(8rem, 10rem, 12rem);
+$nav-logo-height: $nav-logo-width;
 
 /** Fonts **/
 $primary-font: 'Bai Jamjuree', sans-serif;
