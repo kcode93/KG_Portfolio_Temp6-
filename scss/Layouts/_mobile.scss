@@ -30,6 +30,10 @@
 			.container {
 				max-width: $content-wrapper-container-max-width-lg_down !important;
 			}
+
+			h1 {
+				margin-block: clamp(0.5rem, 1rem, 1.2rem) !important;
+			}
 		}
 	}
 }
