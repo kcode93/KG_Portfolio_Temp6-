@@ -3,7 +3,11 @@
 
 // Small devices (landscape phones, less than 768px)
 @include media-breakpoint-down(sm) {
-	//Custom Styles HERE
+	#home {
+		.home__cta_wrapper {
+			flex-direction: column;
+		}
+	}
 }
 
 // Medium devices (tablets, less than 992px)
