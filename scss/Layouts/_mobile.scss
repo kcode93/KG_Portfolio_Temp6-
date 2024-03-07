@@ -8,19 +8,19 @@
 			flex-direction: column;
 		}
 	}
-
-	#content-wrapper {
-		.container {
-			max-width: 100% !important;
-		}
-	}
 }
 
 // Medium devices (tablets, less than 992px)
 @include media-breakpoint-down(md) {
 	#content-wrapper {
-		.container {
-			max-width: 80% !important;
+		#home {
+			h1 {
+				font-size: $h1-size-md;
+			}
+
+			h2 {
+				font-size: $h2-size-md;
+			}
 		}
 	}
 }
@@ -39,14 +39,14 @@
 
 	#content-wrapper {
 		padding-top: $content-wrapper-top-padding;
-		#home {
-			h1 {
-				margin-block: clamp(0.5rem, 1rem, 1.2rem);
-				font-size: 2rem;
-			}
 
-			h2 {
-				font-size: 1.5rem;
+		#home {
+			// .container {
+			// 	//max-width: $content-wrapper-container-max-width-lg_down !important;
+			// }
+
+			h1 {
+				margin-block: clamp(0.5rem, 1rem, 1.2rem) !important;
 			}
 		}
 	}
@@ -54,20 +54,8 @@
 
 // X-Large devices (large desktops, less than 1400px)
 @include media-breakpoint-down(xl) {
-	#content-wrapper {
-		#home {
-			h1 {
-				font-size: 3rem;
-			}
-
-			h2 {
-				font-size: 2rem;
-			}
-		}
-	}
+	//Custom Styles HERE
 }
-
-//////////////////////////////////////
 
 //Upwards
 /** No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) {**/
@@ -79,7 +67,7 @@
 
 // Medium devices (tablets, 768px and up)
 @include media-breakpoint-up(md) {
-	//empty
+	//here
 }
 
 // Large devices (desktops, 992px and up)
@@ -92,15 +80,21 @@
 	#content-wrapper {
 		padding-top: $content-wrapper-top-padding;
 		padding-left: $content-wrapper-left-padding;
+
+		#home {
+			// .container {
+			// 	//max-width: $content-wrapper-container-max-width-lg_up !important;
+			// }
+		}
 	}
 }
 
 // X-Large devices (large desktops, 1200px and up)
 @include media-breakpoint-up(xl) {
-	//empty
+	//Custom Styles HERE
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
 @include media-breakpoint-up(xxl) {
-	//empty
+	//Custom Styles HERE
 }
