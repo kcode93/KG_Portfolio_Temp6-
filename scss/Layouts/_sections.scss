@@ -1,1 +1,10 @@
-//Custom Styles Here
+#home {
+	h1 {
+		font-size: $h1-size;
+	}
+
+	h2 {
+		font-size: $h2-size;
+		text-wrap: pretty;
+	}
+}
