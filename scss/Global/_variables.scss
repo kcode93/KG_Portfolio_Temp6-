@@ -10,7 +10,7 @@ $heading-color: #eef3db;
 
 /** Units of Measure **/
 //navbar
-$side-bar-width: clamp(10rem, 15rem, 20rem);
+$side-bar-width: clamp(12rem, 16rem, 22rem);
 $nav-linear-grad-opacity: 0.9;
 $nav-logo-width: clamp(8rem, 10rem, 12rem);
 $nav-logo-height: $nav-logo-width;
@@ -24,10 +24,13 @@ $content-wrapper-container-max-width-lg_down: 95%;
 
 /** Fonts **/
 $primary-font: 'Bai Jamjuree', sans-serif;
-$h1-size-lg: 4rem;
-$h2-size-lg: 3rem;
-$h1-size-md: 2rem;
-$h2-size-md: 1.5rem;
+
+$fs-xs: clamp(0.5rem, calc(0.478vw + 0.347rem), 1rem);
+$fs-sm: clamp(1.5rem, calc(0.478vw + 1.347rem), 2rem);
+$fs-md: clamp(2.5rem, calc(0.478vw + 2.347rem), 3rem);
+$fs-lg: clamp(3.5rem, calc(0.478vw + 3.347rem), 4rem);
+$fs-xl: clamp(4.5rem, calc(0.478vw + 4.347rem), 5rem);
+$fs-xxl: clamp(5.5rem, calc(0.956vw + 5.194rem), 6.5rem);
 
 //$secondary-font: example;
 

@@ -12,17 +12,7 @@
 
 // Medium devices (tablets, less than 992px)
 @include media-breakpoint-down(md) {
-	#content-wrapper {
-		#home {
-			h1 {
-				font-size: $h1-size-md;
-			}
-
-			h2 {
-				font-size: $h2-size-md;
-			}
-		}
-	}
+	//empty
 }
 
 // Large devices (desktops, less than 1200px)
@@ -39,22 +29,14 @@
 
 	#content-wrapper {
 		padding-top: $content-wrapper-top-padding;
-
-		#home {
-			// .container {
-			// 	//max-width: $content-wrapper-container-max-width-lg_down !important;
-			// }
-
-			h1 {
-				margin-block: clamp(0.5rem, 1rem, 1.2rem) !important;
-			}
-		}
 	}
 }
 
 // X-Large devices (large desktops, less than 1400px)
 @include media-breakpoint-down(xl) {
-	//Custom Styles HERE
+	#content-wrapper {
+		padding-top: $content-wrapper-top-padding;
+	}
 }
 
 //Upwards
@@ -80,12 +62,6 @@
 	#content-wrapper {
 		padding-top: $content-wrapper-top-padding;
 		padding-left: $content-wrapper-left-padding;
-
-		#home {
-			// .container {
-			// 	//max-width: $content-wrapper-container-max-width-lg_up !important;
-			// }
-		}
 	}
 }
 
