@@ -31,7 +31,7 @@ $fs-md: clamp(2.5rem, calc(0.478vw + 2.347rem), 3rem);
 $fs-lg: clamp(3.5rem, calc(0.478vw + 3.347rem), 4rem);
 $fs-xl: clamp(4.5rem, calc(0.478vw + 4.347rem), 5rem);
 $fs-xxl: clamp(5.5rem, calc(0.956vw + 5.194rem), 6.5rem);
-
+$p-width: clamp(50ch, 70ch, 75ch);
 //$secondary-font: example;
 
 /** Utilities **/

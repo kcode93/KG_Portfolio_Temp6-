@@ -1,1 +1,8 @@
-//empty
+#about {
+	.about_text-container {
+		p {
+			max-width: 75ch;
+			text-wrap: pretty;
+		}
+	}
+}
