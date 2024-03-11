@@ -1,7 +1,8 @@
 #about {
+	font-size: $fs-sm;
 	.about_text-container {
 		p {
-			max-width: 75ch;
+			max-width: $p-width;
 			text-wrap: pretty;
 		}
 	}
