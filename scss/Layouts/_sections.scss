@@ -6,4 +6,19 @@
 			text-wrap: pretty;
 		}
 	}
+
+	.accordion-item {
+		border: 0.1rem solid white;
+		border-radius: 0.5;
+
+		.accordion-body {
+			li {
+				background-color: $primary;
+			}
+		}
+
+		.accordion-body {
+			font-size: calc($fs-sm + 1rem);
+		}
+	}
 }

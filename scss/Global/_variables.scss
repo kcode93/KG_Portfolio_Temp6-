@@ -1,12 +1,12 @@
 /** Colors **/
-$primary: #033f47;
-$secondary: #022a30;
-$brand-color-primary: #e0f780;
-$brand-color-secondary: #deff58;
-$dark: #333;
-$light: #f4f4f4;
-$body-color: #b6cbce;
-$heading-color: #eef3db;
+$primary: hsl(187, 92%, 15%);
+$secondary: hsl(188, 92%, 10%);
+$brand-color-primary: hsl(72, 88%, 74%);
+$brand-color-secondary: hsl(72, 100%, 67%);
+$dark: hsl(0, 0%, 20%);
+$light: hsl(0, 0%, 96%);
+$body-color: hsl(188, 20%, 76%);
+$heading-color: hsl(72, 50%, 91%);
 
 /** Units of Measure **/
 //navbar
@@ -25,19 +25,13 @@ $content-wrapper-container-max-width-lg_down: 95%;
 /** Fonts **/
 $primary-font: 'Bai Jamjuree', sans-serif;
 
-//clamp(0.5rem, calc(0.478vw + 0.347rem), 1rem);
-$fs-sm: clamp(
-	1rem,
-	calc(0.153vw + 0.969rem),
-	1.1rem
-); //clamp(1.5rem, calc(0.478vw + 1.347rem), 2rem);
+$fs-sm: clamp(1rem, calc(0.153vw + 0.969rem), 1.1rem);
 $fs-xs: $fs-sm / 2;
-$fs-md: $fs-sm + 1rem; //clamp(2.5rem, calc(0.478vw + 2.347rem), 3rem);
-$fs-lg: $fs-sm + 1.5rem; //clamp(3.5rem, calc(0.478vw + 3.347rem), 4rem);
-$fs-xl: $fs-sm + 2rem; //clamp(4.5rem, calc(0.478vw + 4.347rem), 5rem);
-$fs-xxl: $fs-sm + 2.5rem; //clamp(5.5rem, calc(0.956vw + 5.194rem), 6.5rem);
+$fs-md: $fs-sm + 1rem;
+$fs-lg: $fs-sm + 1.5rem;
+$fs-xl: $fs-sm + 2rem;
+$fs-xxl: $fs-sm + 2.5rem;
 $p-width: clamp(50ch, 70ch, 75ch);
-//$secondary-font: example;
 
 /** Utilities **/
 
@@ -61,6 +55,19 @@ $spacers: (
 $navbar-light-color: $brand-color-primary !default;
 $navbar-light-icon-color: $brand-color-secondary !default;
 $navbar-light-toggler-border-color: $brand-color-secondary !default;
+
+//Accordion
+$accordion-icon-color: $brand-color-primary;
+$accordion-icon-width: clamp(1.5rem, 1.8rem, 2rem);
+$accordion-button-color: $body-color;
+$accordion-button-bg: $primary;
+$accordion-button-active-bg: $brand-color-primary;
+$accordion-button-active-color: $primary;
+$accordion-bg: $primary;
+$accordion-icon-color: $brand-color-primary;
+$accordion-icon-active-color: $primary;
+$accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='#{$accordion-icon-color}' stroke-linecap='round' stroke-linejoin='round'><path d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16'/><path d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4'/></svg>");
+$accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='#{$accordion-icon-active-color}' stroke-linecap='round' stroke-linejoin='round'><path d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16'/><path d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8'/></svg>");
 
 //buttons
 $btn-border-sz: 0.2rem;
