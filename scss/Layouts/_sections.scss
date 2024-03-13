@@ -7,8 +7,18 @@
 		}
 	}
 
+	.about_img {
+		width: $about_img_size;
+		border: $about_img_border_sz solid transparent;
+		transition: all 0.5s ease-in-out;
+
+		&:hover {
+			border: $about_img_border_sz solid $brand-color-primary;
+		}
+	}
+
 	.accordion-item {
-		border: 0.1rem solid white;
+		border: 0.1rem solid $about_accordion_border_color;
 		border-radius: 0.5;
 
 		.accordion-body {
@@ -18,7 +28,7 @@
 		}
 
 		.accordion-body {
-			font-size: calc($fs-sm + 1rem);
+			font-size: calc($fs-sm + 0.5rem);
 		}
 	}
 }

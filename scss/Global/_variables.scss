@@ -5,7 +5,7 @@ $brand-color-primary: hsl(72, 88%, 74%);
 $brand-color-secondary: hsl(72, 100%, 67%);
 $dark: hsl(0, 0%, 20%);
 $light: hsl(0, 0%, 96%);
-$body-color: hsl(188, 20%, 76%);
+$body-color: hsl(185, 19%, 88%);
 $heading-color: hsl(72, 50%, 91%);
 
 /** Units of Measure **/
@@ -15,12 +15,9 @@ $nav-linear-grad-opacity: 0.9;
 $nav-logo-width: clamp(8rem, 10rem, 12rem);
 $nav-logo-height: $nav-logo-width;
 
-//main
-$content-wrapper-top-padding-val: clamp(5rem, 6rem, 8rem);
-$content-wrapper-left-padding: $side-bar-width;
-$content-wrapper-top-padding: $content-wrapper-top-padding-val;
-$content-wrapper-container-max-width-lg_up: 98%;
-$content-wrapper-container-max-width-lg_down: 95%;
+//#about
+$about_img_size: clamp(45%, 65%, 85%);
+$about_img_border_sz: 0.5rem;
 
 /** Fonts **/
 $primary-font: 'Bai Jamjuree', sans-serif;
@@ -32,6 +29,18 @@ $fs-lg: $fs-sm + 1.5rem;
 $fs-xl: $fs-sm + 2rem;
 $fs-xxl: $fs-sm + 2.5rem;
 $p-width: clamp(50ch, 70ch, 75ch);
+
+/** Pages **/
+//main
+$content-wrapper-top-padding-val: clamp(5rem, 6rem, 8rem);
+$content-wrapper-left-padding: $side-bar-width;
+$content-wrapper-top-padding: $content-wrapper-top-padding-val;
+$content-wrapper-container-max-width-lg_up: 98%;
+$content-wrapper-container-max-width-lg_down: 95%;
+
+//sections
+//#about
+$about_accordion_border_color: hsl(0, 0%, 100%);
 
 /** Utilities **/
 
