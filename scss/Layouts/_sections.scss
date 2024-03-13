@@ -32,3 +32,16 @@
 		}
 	}
 }
+
+#skills {
+	.skills_card {
+		.skills_card__ {
+			&icon_wrap {
+				border-radius: $card_border_rad;
+				background-color: red;
+				width: $card_icon_wrap-width;
+				height: $card_icon_wrap-height;
+			}
+		}
+	}
+}
