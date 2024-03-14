@@ -10,7 +10,7 @@
 	.about_img {
 		width: $about_img_size;
 		border: $about_img_border_sz solid transparent;
-		transition: all 0.5s ease-in-out;
+		transition: all $def-transition-duration ease-in-out;
 
 		&:hover {
 			border: $about_img_border_sz solid $brand-color-primary;
@@ -18,8 +18,7 @@
 	}
 
 	.accordion-item {
-		border: 0.1rem solid $about_accordion_border_color;
-		border-radius: 0.5;
+		border: $about_accordion-border-sz solid $about_accordion_border_color;
 
 		.accordion-body {
 			li {
@@ -36,8 +35,12 @@
 #skills {
 	.skills_card {
 		border: $card_border_sz solid transparent;
-		transition: all 0.5s ease-in-out;
+		transition: all $def-transition-duration ease-in-out;
 		background: $primary;
+
+		i {
+			transition: all $def-transition-duration ease-in-out;
+		}
 
 		.card-title {
 			color: $brand-color-primary !important;
@@ -50,12 +53,16 @@
 					border-bottom: $card_border_sz solid $brand-color-primary;
 				}
 			}
+
+			i {
+				color: $brand-color-primary;
+			}
 		}
 
 		.skills_card__ {
 			&icon_wrap {
 				border-bottom: $card_border_sz solid transparent;
-				transition: all 0.5s ease-in-out;
+				transition: all $def-transition-duration ease-in-out;
 				margin-top: $card_wrap-indent;
 				border-radius: $card_border_rad;
 				background-color: $secondary;

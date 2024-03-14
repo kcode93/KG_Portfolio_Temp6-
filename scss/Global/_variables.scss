@@ -18,6 +18,7 @@ $fs-xl: $fs-sm + 2rem;
 $fs-xxl: $fs-sm + 2.5rem;
 $p-width: clamp(50ch, 70ch, 75ch);
 $def-border-sz: 0.5rem;
+$def-transition-duration: 0.5s;
 
 //navbar
 $side-bar-width: clamp(12rem, 16rem, 22rem);
@@ -27,7 +28,8 @@ $nav-logo-height: $nav-logo-width;
 
 //#about
 $about_img_size: clamp(45%, 65%, 85%);
-$about_img_border_sz: $def-border-sz;
+$about_img_border_sz: $def-border-sz / 2;
+$about_accordion-border-sz: 0.1rem;
 
 //#skills
 $card_icon_wrap-width: clamp(6rem, calc(1.53vw + 5.694rem), 7rem);
