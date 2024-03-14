@@ -35,10 +35,30 @@
 
 #skills {
 	.skills_card {
+		border: $card_border_sz solid transparent;
+		transition: all 0.5s ease-in-out;
+		background: $primary;
+
+		.card-title {
+			color: $brand-color-primary !important;
+		}
+
+		&:hover {
+			border: $card_border_sz solid $brand-color-primary;
+			.skills_card__ {
+				&icon_wrap {
+					border-bottom: $card_border_sz solid $brand-color-primary;
+				}
+			}
+		}
+
 		.skills_card__ {
 			&icon_wrap {
+				border-bottom: $card_border_sz solid transparent;
+				transition: all 0.5s ease-in-out;
+				margin-top: $card_wrap-indent;
 				border-radius: $card_border_rad;
-				background-color: red;
+				background-color: $secondary;
 				width: $card_icon_wrap-width;
 				height: $card_icon_wrap-height;
 			}
