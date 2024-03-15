@@ -71,4 +71,14 @@
 			}
 		}
 	}
+
+	.progress {
+		height: 2rem !important;
+		transition: all $def-transition-duration ease-in-out;
+		border: $progress_border_sz solid transparent;
+
+		&:hover {
+			border: $progress_border_sz solid $brand-color-primary;
+		}
+	}
 }

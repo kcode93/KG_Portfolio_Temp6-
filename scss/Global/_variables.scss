@@ -37,6 +37,8 @@ $card_icon_wrap-height: $card_icon_wrap-width;
 $card_border_rad: 50%;
 $card_wrap-indent: -5rem;
 $card_border_sz: $def-border-sz / 2;
+$progress_border_sz: $def-border-sz / 3;
+$progress-bar_height: clamp(1.8rem, calc(0.306vw + 1.739rem), 2rem);
 
 /** Fonts **/
 $primary-font: 'Bai Jamjuree', sans-serif;
