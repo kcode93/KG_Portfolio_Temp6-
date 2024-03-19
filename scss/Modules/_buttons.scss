@@ -6,3 +6,13 @@
 		border: $btn-border-sz solid $brand-color-primary !important;
 	}
 }
+
+.btn-secondary {
+	transition: all 0.5s ease-in-out;
+	border: $btn-border-sz solid transparent;
+
+	&:hover {
+		//border: $btn-border-sz solid $brand-color-secondary !important;
+		color: $brand-color-primary;
+	}
+}

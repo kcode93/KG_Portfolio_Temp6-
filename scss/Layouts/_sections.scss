@@ -82,3 +82,19 @@
 		}
 	}
 }
+
+#work {
+	.work_card {
+		transition: all 0.5s ease-in-out;
+		border: $work_card_border_sz solid transparent;
+
+		&:hover {
+			transform: scale(1.02);
+			border-bottom: $work_card_border_sz solid $brand-color-primary !important;
+			border-left: $work_card_border_sz solid $brand-color-primary !important;
+		}
+		// .work_card__{
+		// 	&
+		// }
+	}
+}
