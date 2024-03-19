@@ -41,7 +41,7 @@ $progress_border_sz: $def-border-sz / 3;
 $progress-bar_height: clamp(1.8rem, calc(0.306vw + 1.739rem), 2rem);
 
 //#work
-$work_card_border_sz: $def-border-sz * 0.8;
+$work_card_border_sz: $def-border-sz * 1.02;
 
 /** Fonts **/
 $primary-font: 'Bai Jamjuree', sans-serif;

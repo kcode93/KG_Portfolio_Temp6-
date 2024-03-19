@@ -85,16 +85,25 @@
 
 #work {
 	.work_card {
-		transition: all 0.5s ease-in-out;
+		.work_card__ {
+			&img {
+				transition: all $def-transition-duration ease-in-out;
+				border: 0.2rem solid transparent;
+			}
+		}
+
+		transition: all $def-transition-duration ease-in-out;
 		border: $work_card_border_sz solid transparent;
 
 		&:hover {
 			transform: scale(1.02);
 			border-bottom: $work_card_border_sz solid $brand-color-primary !important;
-			border-left: $work_card_border_sz solid $brand-color-primary !important;
+			//border-left: $work_card_border_sz solid $brand-color-primary !important;
+			.work_card__ {
+				&img {
+					border: 0.5rem solid $brand-color-primary;
+				}
+			}
 		}
-		// .work_card__{
-		// 	&
-		// }
 	}
 }
