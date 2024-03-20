@@ -1,5 +1,6 @@
 #main-nav {
-	transition: all $def-transition-duration ease-in-out;
+	transition: $def-transition-property $def-transition-duration
+		$def-transition-effect;
 	.nav-logo {
 		width: $nav-logo-width;
 		height: $nav-logo-height;

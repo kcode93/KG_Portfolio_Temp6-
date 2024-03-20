@@ -1,15 +1,17 @@
 .btn-primary {
-	transition: all 0.5s ease-in-out;
-	border: $btn-border-sz solid transparent;
+	transition: $def-transition-property $def-transition-duration
+		$def-transition-effect;
+	border: $btn-border-sz $def-border-style transparent;
 
 	&:hover {
-		border: $btn-border-sz solid $brand-color-primary !important;
+		border: $btn-border-sz $def-border-style $brand-color-primary !important;
 	}
 }
 
 .btn-secondary {
-	transition: all 0.5s ease-in-out;
-	border: $btn-border-sz solid transparent;
+	transition: $def-transition-property $def-transition-duration
+		$def-transition-effect;
+	border: $btn-border-sz $def-border-style transparent;
 
 	&:hover {
 		//border: $btn-border-sz solid $brand-color-secondary !important;

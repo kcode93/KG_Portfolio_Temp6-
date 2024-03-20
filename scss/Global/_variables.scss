@@ -36,6 +36,7 @@ $nav-logo-height: $nav-logo-width;
 /** Pages & Sections **/
 
 //-- main --
+$def-section-height: 100vh;
 $content-wrapper-min-height: 100vh;
 $content-wrapper-top-padding-val: clamp(5rem, 6rem, 8rem);
 $content-wrapper-left-padding: $side-bar-width;
