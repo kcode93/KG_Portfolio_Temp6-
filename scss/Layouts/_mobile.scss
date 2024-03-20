@@ -51,7 +51,7 @@
 // Large devices (desktops, 992px and up)
 @include media-breakpoint-up(lg) {
 	#main-nav {
-		min-height: 100vh;
+		min-height: $content-wrapper-min-height;
 		width: $side-bar-width;
 	}
 

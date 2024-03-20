@@ -9,16 +9,18 @@
 
 	.about_img {
 		width: $about_img_size;
-		border: $about_img_border_sz solid transparent;
-		transition: all $def-transition-duration ease-in-out;
+		border: $about_img_border_sz $def-border-style transparent;
+		transition: $def-transition-property $def-transition-duration
+			$def-transition-effect;
 
 		&:hover {
-			border: $about_img_border_sz solid $brand-color-primary;
+			border: $about_img_border_sz $def-border-style $brand-color-primary;
 		}
 	}
 
 	.accordion-item {
-		border: $about_accordion-border-sz solid $about_accordion_border_color;
+		border: $about_accordion-border-sz $def-border-style
+			$about_accordion_border_color;
 
 		.accordion-body {
 			li {
@@ -34,12 +36,14 @@
 
 #skills {
 	.skills_card {
-		border: $card_border_sz solid transparent;
-		transition: all $def-transition-duration ease-in-out;
+		border: $card_border_sz $def-border-style transparent;
+		transition: $def-transition-property $def-transition-duration
+			$def-transition-effect;
 		background: $primary;
 
 		i {
-			transition: all $def-transition-duration ease-in-out;
+			transition: $def-transition-property $def-transition-duration
+				$def-transition-effect;
 		}
 
 		.card-title {
@@ -47,10 +51,10 @@
 		}
 
 		&:hover {
-			border: $card_border_sz solid $brand-color-primary;
+			border: $card_border_sz $def-border-style $brand-color-primary;
 			.skills_card__ {
 				&icon_wrap {
-					border-bottom: $card_border_sz solid $brand-color-primary;
+					border-bottom: $card_border_sz $def-border-style $brand-color-primary;
 				}
 			}
 
@@ -61,8 +65,9 @@
 
 		.skills_card__ {
 			&icon_wrap {
-				border-bottom: $card_border_sz solid transparent;
-				transition: all $def-transition-duration ease-in-out;
+				border-bottom: $card_border_sz $def-border-style transparent;
+				transition: $def-transition-property $def-transition-duration
+					$def-transition-effect;
 				margin-top: $card_wrap-indent;
 				border-radius: $card_border_rad;
 				background-color: $secondary;
@@ -73,33 +78,26 @@
 	}
 
 	.progress {
-		height: 2rem !important;
-		transition: all $def-transition-duration ease-in-out;
-		border: $progress_border_sz solid transparent;
+		height: $progress-bar_height !important;
+		transition: $def-transition-property $def-transition-duration
+			$def-transition-effect;
+		border: $progress_border_sz $def-border-style transparent;
 
 		&:hover {
-			border: $progress_border_sz solid $brand-color-primary;
+			border: $progress_border_sz $def-border-style $brand-color-primary;
 		}
 	}
 }
 
 #work {
 	.work_card {
-		//local variables
-		$work_card_scale: 1.02;
-		$work_card_border-z_index: -1;
-		$work_card_border_type: solid;
-		$work_card_transition-type: ease-in-out;
-		$work_card_pseudo-position: absolute;
-		$work_card_pseudo-offset: clamp(-0.45rem, -0.5rem, -0.55rem);
-		$work_card_pseudo-width: calc(100% + 0.8%);
-		$work_card_pseudo-height: calc(100% + 1.2%);
-
 		background-color: $primary;
-		transition: all $def-transition-duration $work_card_transition-type;
+		transition: $def-transition-property $def-transition-duration
+			$work_card_transition-type;
 
 		&::before {
-			transition: all $def-transition-duration $work_card_transition-type;
+			transition: $def-transition-property $def-transition-duration
+				$work_card_transition-type;
 			content: '';
 			z-index: $work_card_border-z_index;
 			width: $work_card_pseudo-width;

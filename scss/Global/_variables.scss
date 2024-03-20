@@ -5,29 +5,46 @@ $brand-color-primary: hsl(72, 88%, 74%);
 $brand-color-secondary: hsl(72, 100%, 67%);
 $dark: hsl(0, 0%, 20%);
 $light: hsl(0, 0%, 96%);
-//$secondary-light: hsl(188, 92%, 20%);
 $body-color: hsl(185, 19%, 88%);
 $heading-color: hsl(72, 50%, 91%);
 
 /** Units of Measure **/
-//General
+
+//-- General --
+$p-width: clamp(50ch, 70ch, 75ch);
+$def-border-sz: 0.5rem;
+$def-border-style: solid;
+$def-transition-property: all;
+$def-transition-duration: 0.5s;
+$def-transition-effect: ease-in-out;
+
+// -- Fonts --
+$primary-font: 'Bai Jamjuree', sans-serif;
 $fs-sm: clamp(1rem, calc(0.153vw + 0.969rem), 1.1rem);
 $fs-xs: $fs-sm / 2;
 $fs-md: $fs-sm + 1rem;
 $fs-lg: $fs-sm + 1.5rem;
 $fs-xl: $fs-sm + 2rem;
 $fs-xxl: $fs-sm + 2.5rem;
-$p-width: clamp(50ch, 70ch, 75ch);
-$def-border-sz: 0.5rem;
-$def-transition-duration: 0.5s;
 
-//navbar
+//-- Navbar --
 $side-bar-width: clamp(12rem, 16rem, 22rem);
 $nav-linear-grad-opacity: 0.9;
 $nav-logo-width: clamp(8rem, 10rem, 12rem);
 $nav-logo-height: $nav-logo-width;
 
-//#about
+/** Pages & Sections **/
+
+//-- main --
+$content-wrapper-min-height: 100vh;
+$content-wrapper-top-padding-val: clamp(5rem, 6rem, 8rem);
+$content-wrapper-left-padding: $side-bar-width;
+$content-wrapper-top-padding: $content-wrapper-top-padding-val;
+$content-wrapper-container-max-width-lg_up: 98%;
+$content-wrapper-container-max-width-lg_down: 95%;
+
+//#bout
+$about_accordion_border_color: hsl(0, 0%, 100%);
 $about_img_size: clamp(45%, 65%, 85%);
 $about_img_border_sz: $def-border-sz / 2;
 $about_accordion-border-sz: 0.1rem;
@@ -43,27 +60,20 @@ $progress-bar_height: clamp(1.8rem, calc(0.306vw + 1.739rem), 2rem);
 
 //#work
 $work_card_border_sz: $def-border-sz * 1.02;
-
-/** Fonts **/
-$primary-font: 'Bai Jamjuree', sans-serif;
-
-/** Pages **/
-//main
-$content-wrapper-top-padding-val: clamp(5rem, 6rem, 8rem);
-$content-wrapper-left-padding: $side-bar-width;
-$content-wrapper-top-padding: $content-wrapper-top-padding-val;
-$content-wrapper-container-max-width-lg_up: 98%;
-$content-wrapper-container-max-width-lg_down: 95%;
-
-//sections
-//#about
-$about_accordion_border_color: hsl(0, 0%, 100%);
+$work_card_scale: 1.02;
+$work_card_border-z_index: -1;
+$work_card_border_type: $def-border-style;
+$work_card_transition-type: $def-transition-effect;
+$work_card_pseudo-position: absolute;
+$work_card_pseudo-offset: clamp(-0.45rem, -0.5rem, -0.55rem);
+$work_card_pseudo-width: calc(100% + 0.8%);
+$work_card_pseudo-height: calc(100% + 1.2%);
 
 /** Utilities **/
 
 /** Bootstrap Components **/
 
-//Spacers
+//BS_Spacers
 $spacer: 1rem !default;
 $spacers: (
 	0: 0,
@@ -77,12 +87,12 @@ $spacers: (
 	8: $spacer * 12,
 ) !default;
 
-//navbar
+//--BS_Navbar
 $navbar-light-color: $brand-color-primary !default;
 $navbar-light-icon-color: $brand-color-secondary !default;
 $navbar-light-toggler-border-color: $brand-color-secondary !default;
 
-//Accordion
+//--BS_Accordion
 $accordion-icon-color: $brand-color-primary;
 $accordion-icon-width: clamp(1.5rem, 1.8rem, 2rem);
 $accordion-button-color: $body-color;
@@ -96,5 +106,5 @@ $accordion-button-padding-y: clamp(0.5rem, calc(0.153vw + 0.469rem), 0.6rem);
 $accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='#{$accordion-icon-color}' stroke-linecap='round' stroke-linejoin='round'><path d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16'/><path d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4'/></svg>");
 $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='#{$accordion-icon-active-color}' stroke-linecap='round' stroke-linejoin='round'><path d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16'/><path d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8'/></svg>");
 
-//buttons
+//--BS_Buttons
 $btn-border-sz: 0.2rem;
