@@ -85,24 +85,41 @@
 
 #work {
 	.work_card {
-		.work_card__ {
-			&img {
-				transition: all $def-transition-duration ease-in-out;
-				border: 0.2rem solid transparent;
-			}
+		//local variables
+		$work_card_scale: 1.02;
+		$work_card_border-z_index: -1;
+		$work_card_border_type: solid;
+		$work_card_transition-type: ease-in-out;
+		$work_card_pseudo-position: absolute;
+		$work_card_pseudo-offset: clamp(-0.45rem, -0.5rem, -0.55rem);
+		$work_card_pseudo-width: calc(100% + 0.8%);
+		$work_card_pseudo-height: calc(100% + 1.2%);
+
+		background-color: $primary;
+		transition: all $def-transition-duration $work_card_transition-type;
+
+		&::before {
+			transition: all $def-transition-duration $work_card_transition-type;
+			content: '';
+			z-index: $work_card_border-z_index;
+			width: $work_card_pseudo-width;
+			height: $work_card_pseudo-height;
+			position: $work_card_pseudo-position;
+			left: $work_card_pseudo-offset;
+			bottom: $work_card_pseudo-offset;
+			background-color: transparent;
+			border-left: $work_card_border_sz $work_card_border_type transparent;
+			border-bottom: $work_card_border_sz $work_card_border_type transparent;
+			border-radius: $card_border_rad / 30;
 		}
 
-		transition: all $def-transition-duration ease-in-out;
-		border: $work_card_border_sz solid transparent;
-
 		&:hover {
-			transform: scale(1.02);
-			border-bottom: $work_card_border_sz solid $brand-color-primary !important;
-			//border-left: $work_card_border_sz solid $brand-color-primary !important;
-			.work_card__ {
-				&img {
-					border: 0.5rem solid $brand-color-primary;
-				}
+			transform: scale($work_card_scale);
+			&::before {
+				border-bottom: $work_card_border_sz $work_card_border_type
+					$brand-color-primary;
+				border-left: $work_card_border_sz $work_card_border_type
+					$brand-color-primary;
 			}
 		}
 	}
