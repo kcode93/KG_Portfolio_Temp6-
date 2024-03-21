@@ -21,5 +21,29 @@
 
 .section-height {
 	min-height: $def-section-height;
-	//height: 100%;
+}
+
+//Project Modals
+.work_project_modal {
+	.modal-content {
+		background-color: $primary;
+		border: $def-border-style $card_border_sz / 2 $body-color;
+
+		.modal-header {
+			.modal-title {
+				color: $brand-color-primary !important;
+			}
+
+			.btn-close {
+				background-color: $brand-color-primary;
+			}
+		}
+
+		.modal-body {
+			p {
+				font-size: $fs-lg !important;
+				max-width: $p-width;
+			}
+		}
+	}
 }
