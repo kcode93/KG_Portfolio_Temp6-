@@ -40,8 +40,12 @@
 		}
 
 		.modal-body {
-			p {
-				font-size: $fs-lg !important;
+			.modal-body-title {
+				font-weight: bold;
+				color: $brand-color-primary !important;
+			}
+			.modal-body-text {
+				font-size: $fs-xxl default;
 				max-width: $p-width;
 			}
 		}
