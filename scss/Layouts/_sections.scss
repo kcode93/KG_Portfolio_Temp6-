@@ -119,6 +119,23 @@
 				border-left: $work_card_border_sz $work_card_border_type
 					$brand-color-primary;
 			}
+
+			// .work_card__img-wrapper {
+			// 	border-bottom: $card_border_sz $def-border-style $secondary;
+			// }
+		}
+
+		&__img-wrapper {
+			display: flex;
+			height: 14rem;
+			overflow: hidden;
+			border-bottom: $card_border_sz $def-border-style $brand-color-primary;
+
+			.work_card_img {
+				background-color: pink;
+				width: 100% !important;
+				height: 100% !important;
+			}
 		}
 	}
 }
