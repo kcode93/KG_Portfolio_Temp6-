@@ -1,5 +1,5 @@
 #about {
-	font-size: $fs-sm;
+	//font-size: $fs-md;
 	.about_text-container {
 		p {
 			max-width: $p-width;
@@ -35,7 +35,9 @@
 }
 
 #skills {
+	//font-size: $fs-md;
 	.skills_card {
+		//font-size: $fs-sm;
 		border: $card_border_sz $def-border-style transparent;
 		transition: $def-transition-property $def-transition-duration
 			$def-transition-effect;
@@ -47,6 +49,7 @@
 		}
 
 		.card-title {
+			text-align: center;
 			color: $brand-color-primary !important;
 		}
 
@@ -90,7 +93,9 @@
 }
 
 #work {
+	//font-size: $fs-md;
 	.work_card {
+		//font-size: $fs-sm;
 		background-color: $primary;
 		transition: $def-transition-property $def-transition-duration
 			$work_card_transition-type;
