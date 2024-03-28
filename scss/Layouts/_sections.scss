@@ -132,12 +132,12 @@
 
 		&__img-wrapper {
 			display: flex;
-			height: 14rem;
+			height: $work_card_img-sz;
 			overflow: hidden;
 			border-bottom: $card_border_sz $def-border-style $brand-color-primary;
 
 			.work_card_img {
-				background-color: pink;
+				//background-color: pink;
 				width: 100% !important;
 				height: 100% !important;
 			}

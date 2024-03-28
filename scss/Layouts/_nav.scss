@@ -5,4 +5,18 @@
 		width: $nav-logo-width;
 		height: $nav-logo-height;
 	}
+
+	.navbar-nav {
+		.nav-item {
+			&:focus {
+				background-color: $secondary;
+			}
+
+			.nav-link {
+				&:focus {
+					background-color: $secondary;
+				}
+			}
+		}
+	}
 }

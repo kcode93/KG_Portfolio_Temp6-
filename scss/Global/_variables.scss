@@ -70,6 +70,7 @@ $work_card_pseudo-position: absolute;
 $work_card_pseudo-offset: clamp(-0.45rem, -0.5rem, -0.55rem);
 $work_card_pseudo-width: calc(100% + 0.8%);
 $work_card_pseudo-height: calc(100% + 1.2%);
+$work_card_img-sz: clamp(14.5rem, calc(1.53vw + 14.194rem), 15.5rem);
 
 /** Utilities **/
 
