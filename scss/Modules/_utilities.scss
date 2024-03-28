@@ -48,6 +48,16 @@
 				//font-size: $fs-xxl default;
 				max-width: $p-width;
 			}
+
+			.modal-body-img {
+				transition: $def-transition-property $def-transition-duration
+					$def-transition-duration;
+				border: $card_border_sz $def-border-style transparent;
+
+				&:hover {
+					border: $card_border_sz $def-border-style $brand-color-primary;
+				}
+			}
 		}
 	}
 }
