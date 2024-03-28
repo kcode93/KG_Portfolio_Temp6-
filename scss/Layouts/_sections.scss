@@ -95,7 +95,7 @@
 #work {
 	//font-size: $fs-md;
 	.work_card {
-		//font-size: $fs-sm;
+		position: relative;
 		background-color: $primary;
 		transition: $def-transition-property $def-transition-duration
 			$work_card_transition-type;
@@ -140,6 +140,12 @@
 				//background-color: pink;
 				width: 100% !important;
 				height: 100% !important;
+			}
+		}
+
+		.card-body {
+			.card-title {
+				color: $brand-color-primary !important;
 			}
 		}
 	}
