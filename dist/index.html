@@ -137,7 +137,7 @@
 					<div class="container">
 						<div class="row">
 							<div
-								class="col-lg-6 d-flex flex-column justify-content-center mb-md-5 text-center text-md-start"
+								class="col-lg-8 col-xl-6 d-flex flex-column justify-content-center mb-md-5 text-center text-md-start"
 							>
 								<h1 class="fw-bold display-3 mb-3">
 									I'm
@@ -162,7 +162,7 @@
 							</div>
 
 							<div
-								class="col-lg-6 d-flex justify-content-center align-items-center order-first order-lg-last"
+								class="col-lg-4 col-xl-6 d-flex justify-content-center align-items-center order-first order-lg-last"
 							>
 								<div class="lottie-container">
 									<lottie-player
@@ -1000,15 +1000,22 @@
 												</div>
 
 												<div class="col-md-6">
-													<input
-														id="contact-form-lastname"
-														type="text"
-														class="form-control form-control-lg mb-3"
-														placeholder="Last Name"
-														aria-label="Last Name"
-														aria-describedby="Last name"
-														required
-													/>
+													<div class="input-group mb-3">
+														<span
+															class="input-group-text"
+															id="contact-form-last-name"
+														>
+															<i class="fa-solid fa-user"></i>
+														</span>
+														<input
+															type="text"
+															class="form-control form-control-lg"
+															placeholder="Lastname"
+															aria-label="Lastname"
+															aria-describedby="Lastname"
+															required
+														/>
+													</div>
 												</div>
 											</div>
 
@@ -1066,7 +1073,8 @@
 														<textarea
 															name="contact-form-messageN"
 															id="contact-form-message"
-															class="form-control"
+															class="form-control form-control-lg rounded-end-3"
+															placeholder="Your Message..."
 															cols="30"
 															rows="10"
 															required
@@ -1081,7 +1089,7 @@
 													<div class="d-grid">
 														<button
 															type="submit"
-															class="py-3 btn btn-lg bg-brand-color-primary text-secondary fw-bold"
+															class="contact_submit btn-lg py-3 btn fw-bold"
 														>
 															<i class="fa-solid fa-paper-plane"></i>
 															Submit
@@ -1144,14 +1152,14 @@
 								<div class="col-lg-6 mb-3">
 									<img
 										src="./resources/img/Illustrations/demo-card-pic.jpg"
-										class="modal-body-img img-fluid rounded-3 h-100"
+										class="modal-body-img img-fluid rounded-4"
 										alt="Preview, miniature picture of the live website"
 									/>
 								</div>
 
 								<div class="col-lg-6">
 									<h3 class="modal-body-title">Details</h3>
-									<p class="modal-body-text lead">
+									<p class="modal-body-text">
 										Lorem ipsum dolor sit amet consectetur, adipisicing elit.
 										Consequatur consectetur sunt et itaque atque enim dolore
 										voluptates deserunt reprehenderit, sit ad illo voluptas
@@ -1160,7 +1168,7 @@
 										consequuntur dolore beatae nisi magni!
 									</p>
 
-									<p class="modal-body-text lead">
+									<p class="modal-body-text">
 										Lorem ipsum dolor sit amet consectetur, adipisicing elit.
 										Consequatur consectetur sunt et itaque atque enim dolore
 										voluptates deserunt reprehenderit, sit ad illo voluptas

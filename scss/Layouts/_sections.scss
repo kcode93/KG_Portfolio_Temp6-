@@ -150,3 +150,48 @@
 		}
 	}
 }
+
+#contact {
+	.input-group-text {
+		color: $brand-color-primary;
+		background-color: $primary;
+		border: $card_border_sz / 2 $def-border-style $light;
+
+		&:hover {
+			border: $card_border_sz / 2 $def-border-style $brand-color-primary;
+		}
+	}
+
+	.form-control {
+		border: $card_border_sz $def-border-style $light;
+		color: $secondary;
+
+		&:hover {
+			border: $card_border_sz $def-border-style $brand-color-primary;
+		}
+
+		&:focus {
+			.input-group-text {
+				border: $card_border_sz / 2 $def-border-style $brand-color-primary;
+			}
+		}
+
+		&::placeholder {
+			color: $secondary;
+			opacity: $contact_form__submit-opacity;
+		}
+	}
+
+	#contact-form-message {
+		resize: none;
+	}
+
+	.contact_submit {
+		background-color: $brand-color-primary;
+		color: $secondary;
+
+		&:hover {
+			background-color: $brand-color-secondary;
+		}
+	}
+}
