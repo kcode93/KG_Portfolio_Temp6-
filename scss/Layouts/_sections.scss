@@ -153,6 +153,8 @@
 
 #contact {
 	.input-group-text {
+		transition: $def-transition-property $def-transition-duration
+			$def-transition-effect;
 		color: $brand-color-primary;
 		background-color: $primary;
 		border: $card_border_sz / 2 $def-border-style $light;
@@ -163,17 +165,14 @@
 	}
 
 	.form-control {
+		transition: $def-transition-property $def-transition-duration
+			$def-transition-effect;
 		border: $card_border_sz $def-border-style $light;
 		color: $secondary;
 
-		&:hover {
-			border: $card_border_sz $def-border-style $brand-color-primary;
-		}
-
+		&:hover,
 		&:focus {
-			.input-group-text {
-				border: $card_border_sz / 2 $def-border-style $brand-color-primary;
-			}
+			border: $card_border_sz $def-border-style $brand-color-primary;
 		}
 
 		&::placeholder {
