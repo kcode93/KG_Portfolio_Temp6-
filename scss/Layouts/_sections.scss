@@ -12,6 +12,7 @@
 		border: $about_img_border_sz $def-border-style transparent;
 		transition: $def-transition-property $def-transition-duration
 			$def-transition-effect;
+		object-fit: contain;
 
 		&:hover {
 			border: $about_img_border_sz $def-border-style $brand-color-primary;

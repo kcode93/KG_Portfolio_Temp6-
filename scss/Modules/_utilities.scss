@@ -27,9 +27,10 @@
 .work_project_modal {
 	.modal-content {
 		background-color: $primary;
-		border: $def-border-style $card_border_sz / 2 $body-color;
+		border: $def-border-style $card_border_sz $primary;
 
 		.modal-header {
+			border-bottom: $def-border-sz $def-border-style $brand-color-primary;
 			.modal-title {
 				color: $brand-color-primary !important;
 			}
@@ -52,12 +53,17 @@
 			.modal-body-img {
 				transition: $def-transition-property $def-transition-duration
 					$def-transition-duration;
-				border: $card_border_sz $def-border-style transparent;
+				border: $def-border-sz $def-border-style transparent;
+				//object-fit: cover;
 
 				&:hover {
-					border: $card_border_sz $def-border-style $brand-color-primary;
+					border: $def-border-sz $def-border-style $brand-color-primary;
 				}
 			}
+		}
+
+		.modal-footer {
+			border-top: $def-border-sz $def-border-style $secondary;
 		}
 	}
 }

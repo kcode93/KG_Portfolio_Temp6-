@@ -18,3 +18,18 @@
 		color: $brand-color-primary;
 	}
 }
+
+.btn-primary-brand {
+	background-color: $brand-color-primary;
+	color: $secondary !important;
+	transition: $def-transition-property $def-transition-duration
+		$def-transition-effect;
+	border: $btn-border-sz $def-border-style transparent;
+
+	&:hover {
+		background-color: $brand-color-primary;
+		font-weight: bold;
+		color: $secondary !important;
+		border: $btn-border-sz $def-border-style $secondary;
+	}
+}
