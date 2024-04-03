@@ -19,7 +19,8 @@ a {
 	color: $body-color !important;
 	transition: all 0.5s ease-in-out;
 
-	&:hover {
+	&:hover,
+	&:focus {
 		color: $brand-color-primary !important;
 	}
 }

@@ -3,7 +3,8 @@
 		$def-transition-effect;
 	border: $btn-border-sz $def-border-style transparent;
 
-	&:hover {
+	&:hover,
+	&:focus {
 		border: $btn-border-sz $def-border-style $brand-color-primary !important;
 	}
 }
@@ -13,7 +14,8 @@
 		$def-transition-effect;
 	border: $btn-border-sz $def-border-style transparent;
 
-	&:hover {
+	&:hover,
+	&:focus {
 		//border: $btn-border-sz solid $brand-color-secondary !important;
 		color: $brand-color-primary;
 	}
@@ -26,7 +28,8 @@
 		$def-transition-effect;
 	border: $btn-border-sz $def-border-style transparent;
 
-	&:hover {
+	&:hover,
+	&:focus {
 		background-color: $brand-color-primary;
 		color: $secondary !important;
 		border: $btn-border-sz $def-border-style $secondary;
