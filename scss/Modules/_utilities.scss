@@ -23,6 +23,11 @@
 	min-height: $def-section-height;
 }
 
+.def-transition {
+	transition: $def-transition-property $def-transition-duration
+		$def-transition-effect;
+}
+
 //Project Modals
 .work_project_modal {
 	.modal-content {
