@@ -20,7 +20,8 @@ a {
 	transition: all 0.5s ease-in-out;
 
 	&:hover,
-	&:focus {
+	&:focus,
+	&:active {
 		color: $brand-color-primary !important;
 	}
 }

@@ -9,13 +9,14 @@
 	.navbar-nav {
 		.nav-item {
 			width: 100%;
-			&:focus {
-				background-color: $secondary;
-			}
+			// &:focus {
+			// 	background-color: $secondary;
+			// }
 
 			.nav-link {
-				&:focus {
-					background-color: $secondary;
+				&:focus,
+				&:active {
+					color: $brand-color-primary;
 				}
 			}
 		}
