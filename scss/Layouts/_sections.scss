@@ -9,13 +9,15 @@
 
 	.about_img {
 		width: $about_img_size;
-		border: $about_img_border_sz $def-border-style transparent;
+		border-bottom: $about_img_border_sz $def-border-style transparent;
+		border-left: $about_img_border_sz $def-border-style transparent;
 		transition: $def-transition-property $def-transition-duration
 			$def-transition-effect;
 		object-fit: contain;
 
 		&:hover {
-			border: $about_img_border_sz $def-border-style $brand-color-primary;
+			border-bottom: $about_img_border_sz $def-border-style $brand-color-primary;
+			border-left: $about_img_border_sz $def-border-style $brand-color-primary;
 		}
 	}
 
@@ -38,9 +40,7 @@
 }
 
 #skills {
-	//font-size: $fs-md;
 	.skills_card {
-		//font-size: $fs-sm;
 		border: $card_border_sz $def-border-style transparent;
 		transition: $def-transition-property $def-transition-duration
 			$def-transition-effect;
@@ -127,10 +127,6 @@
 				border-left: $work_card_border_sz $work_card_border_type
 					$brand-color-primary;
 			}
-
-			// .work_card__img-wrapper {
-			// 	border-bottom: $card_border_sz $def-border-style $secondary;
-			// }
 		}
 
 		&__img-wrapper {

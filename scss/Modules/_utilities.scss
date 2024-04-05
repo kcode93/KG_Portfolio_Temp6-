@@ -58,11 +58,12 @@
 			.modal-body-img {
 				transition: $def-transition-property $def-transition-duration
 					$def-transition-duration;
-				border: $def-border-sz $def-border-style transparent;
-				//object-fit: cover;
+				border-bottom: $def-border-sz $def-border-style transparent;
+				border-left: $def-border-sz $def-border-style transparent;
 
 				&:hover {
-					border: $def-border-sz $def-border-style $brand-color-primary;
+					border-bottom: $def-border-sz $def-border-style $brand-color-primary;
+					border-left: $def-border-sz $def-border-style $brand-color-primary;
 				}
 			}
 		}
