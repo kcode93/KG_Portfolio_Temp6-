@@ -20,6 +20,8 @@
 	}
 
 	.accordion-item {
+		transition: $def-transition-property $def-transition-duration
+			$def-transition-effect;
 		border: $about_accordion-border-sz $def-border-style
 			$about_accordion_border_color;
 
