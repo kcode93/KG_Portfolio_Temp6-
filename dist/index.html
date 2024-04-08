@@ -1022,7 +1022,11 @@
 									class="contact__form-wrapper bg-primary p-3 p-lg-4 rounded-4 d-flex align-items-center justify-content-center"
 									data-aos="fade-up-right"
 								>
-									<form>
+									<form
+										name="contact_me_form"
+										method="POST"
+										data-netlify="true"
+									>
 										<div class="container-fluid">
 											<!--Row 1-->
 											<div class="row">
@@ -1035,6 +1039,7 @@
 															<i class="fa-solid fa-user"></i>
 														</span>
 														<input
+															name="name"
 															type="text"
 															class="form-control form-control-lg"
 															placeholder="Name"
@@ -1054,11 +1059,12 @@
 															<i class="fa-solid fa-user"></i>
 														</span>
 														<input
+															name="lastname"
 															type="text"
 															class="form-control form-control-lg"
-															placeholder="Lastname"
-															aria-label="Lastname"
-															aria-describedby="Lastname"
+															placeholder="Last Name"
+															aria-label="Last Name"
+															aria-describedby="Last Name"
 															required
 														/>
 													</div>
@@ -1076,6 +1082,7 @@
 															<i class="fa-solid fa-envelope"></i>
 														</span>
 														<input
+															name="email"
 															type="email"
 															class="form-control form-control-lg"
 															placeholder="John.Doe@email.com"
@@ -1095,6 +1102,7 @@
 															<i class="fa-solid fa-phone"></i>
 														</span>
 														<input
+															name="phone"
 															type="text"
 															class="form-control form-control-lg"
 															placeholder="Phone (###) ### - #####"
@@ -1117,7 +1125,7 @@
 															<i class="fa-solid fa-message"></i>
 														</span>
 														<textarea
-															name="contact-form-messageN"
+															name="message"
 															id="contact-form-message"
 															class="form-control form-control-lg rounded-end-3"
 															placeholder="Your Message..."

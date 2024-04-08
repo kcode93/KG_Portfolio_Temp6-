@@ -171,7 +171,7 @@
 
 		&:hover,
 		&:focus {
-			border: $card_border_sz $def-border-style $brand-color-primary;
+			border: $card_border_sz $def-border-style $primary;
 		}
 
 		&::placeholder {
