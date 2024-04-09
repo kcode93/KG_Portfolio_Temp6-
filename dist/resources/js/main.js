@@ -1,7 +1,7 @@
 //Replace me Code preferences
 let replace = new ReplaceMe(document.querySelector('.replace-me'), {
     animation: 'animated fadeIn',                       // Animation class or classes
-    speed: 2500,                                        // Delay between each phrase in miliseconds
+    speed: 2500,                                        // Delay between each phrase in milliseconds
     separator: ',',                                     // Phrases separator
     hoverStop: false,                                   // Stop rotator on phrase hover
     clickChange: false,                                 // Change phrase on click
@@ -52,4 +52,3 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
-

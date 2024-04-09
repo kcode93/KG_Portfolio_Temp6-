@@ -18,10 +18,13 @@ a {
 	text-decoration: none;
 	color: $body-color !important;
 	transition: all 0.5s ease-in-out;
-
 	&:hover,
 	&:focus,
 	&:active {
+		color: $brand-color-primary !important;
+	}
+
+	&.active {
 		color: $brand-color-primary !important;
 	}
 }
