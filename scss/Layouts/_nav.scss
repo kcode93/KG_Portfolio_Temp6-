@@ -9,16 +9,18 @@
 	.navbar-nav {
 		.nav-item {
 			width: 100%;
+
 			// &:focus {
 			// 	background-color: $secondary;
 			// }
 
-			.nav-link {
-				&:focus,
-				&:active {
-					color: $brand-color-primary;
-				}
-			}
+			// .nav-link {
+			// 	&:focus,
+			// 	&:active {
+			// 		color: $brand-color-primary;
+			// 		background-color: $secondary;
+			// 	}
+			// }
 		}
 	}
 }

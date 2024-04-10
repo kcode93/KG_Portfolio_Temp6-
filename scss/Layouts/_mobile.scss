@@ -17,7 +17,21 @@
 		.navbar-nav {
 			.nav-item {
 				&:hover {
-					background-color: $secondary;
+					background-color: $mobile-nav-hover-color !important;
+				}
+
+				&:focus {
+					a {
+						color: $brand-color-primary !important;
+						background-color: $mobile-nav-hover-color !important;
+					}
+				}
+
+				.nav-link {
+					&.active {
+						color: $brand-color-primary !important;
+						background-color: $secondary !important;
+					}
 				}
 			}
 		}
@@ -53,6 +67,34 @@
 	#main-nav {
 		min-height: $content-wrapper-min-height;
 		width: $side-bar-width;
+
+		.container-lg {
+			max-width: 100%;
+			margin-left: 0;
+			margin-right: 0;
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		.navbar-nav {
+			.nav-item {
+				&:focus {
+					background-color: $secondary !important;
+				}
+
+				.nav-link {
+					&:hover {
+						color: $brand-color-primary !important;
+						background-color: $mobile-nav-hover-color !important;
+					}
+
+					&.active {
+						color: $brand-color-primary !important;
+						background-color: $secondary !important;
+					}
+				}
+			}
+		}
 	}
 
 	#content-wrapper {
