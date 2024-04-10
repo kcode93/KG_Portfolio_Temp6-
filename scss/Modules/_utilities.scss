@@ -31,11 +31,21 @@
 //Project Modals
 .work_project_modal {
 	.modal-content {
-		background-color: $primary;
-		//border: $def-border-style $def-border-sz $secondary;
+		background-color: $secondary;
+		border: $def-border-sz/5 $def-border-style $light;
+
+		#modal-close-btn {
+			background-color: $brand-color-primary;
+			transition: $def-transition-property $def-transition-duration
+				$def-transition-effect;
+
+			&:hover {
+				background-color: $danger;
+			}
+		}
 
 		.modal-header {
-			border-bottom: $def-border-sz $def-border-style $brand-color-primary;
+			border-bottom: $def-border-sz $def-border-style $primary;
 			.modal-title {
 				color: $brand-color-primary !important;
 			}
@@ -51,7 +61,6 @@
 				color: $brand-color-primary !important;
 			}
 			.modal-body-text {
-				//font-size: $fs-xxl default;
 				max-width: $p-width;
 			}
 
@@ -69,7 +78,7 @@
 		}
 
 		.modal-footer {
-			border-top: $def-border-sz $def-border-style $secondary;
+			border-top: $def-border-sz $def-border-style $primary;
 		}
 	}
 }
