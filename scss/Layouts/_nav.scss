@@ -11,4 +11,13 @@
 			width: 100%;
 		}
 	}
+
+	.social-media {
+		a {
+			&:hover,
+			&:focus {
+				color: $brand-color-primary !important;
+			}
+		}
+	}
 }

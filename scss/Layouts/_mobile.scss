@@ -14,6 +14,7 @@
 // Large devices (desktops, less than 1200px)
 @include media-breakpoint-down(lg) {
 	#main-nav {
+		border-bottom: $def-border-sz/2.5 $def-border-style $brand-color-primary;
 		.navbar-nav {
 			.nav-item {
 				&:hover {
@@ -23,14 +24,15 @@
 				&:focus {
 					a {
 						color: $brand-color-primary !important;
-						background-color: $mobile-nav-hover-color !important;
+						//background-color: $mobile-nav-hover-color !important;
 					}
 				}
 
 				.nav-link {
 					&.active {
 						color: $brand-color-primary !important;
-						background-color: $secondary !important;
+						font-weight: 500;
+						//background-color: $mobile-nav-hover-color !important;
 					}
 				}
 			}
