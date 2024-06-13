@@ -31,7 +31,7 @@
 //Project Modals
 .work_project_modal {
 	.modal-content {
-		background-color: $secondary;
+		background-color: $mobile-nav-hover-color;
 		border: $def-border-sz/5 $def-border-style $light;
 
 		#modal-close-btn {
@@ -45,7 +45,7 @@
 		}
 
 		.modal-header {
-			border-bottom: $def-border-sz $def-border-style $primary;
+			border-bottom: $def-border-sz $def-border-style $light;
 			.modal-title {
 				color: $brand-color-primary !important;
 			}
@@ -56,13 +56,22 @@
 		}
 
 		.modal-body {
-			background-color: $mobile-nav-hover-color;
+			$modal_body_wrapper-padding: 1.5rem;
+			$modal_body_wrapper-border_radius: 0.5rem;
+			background-color: $light;
+			.modal_content_wrapper {
+				padding: $modal_body_wrapper-padding;
+				background-color: $secondary;
+				border-radius: $modal_body_wrapper-border_radius;
+			}
+
 			.modal-body-title {
 				font-weight: bold;
 				color: $brand-color-primary !important;
 			}
 			.modal-body-text {
 				max-width: $p-width;
+				color: $light;
 			}
 
 			.modal-body-img {
@@ -79,7 +88,14 @@
 		}
 
 		.modal-footer {
-			border-top: $def-border-sz $def-border-style $brand-color-primary;
+			border-top: $def-border-sz $def-border-style $light;
+
+			.btn-secondary {
+				&:hover,
+				&:focus {
+					border: $btn-border-sz $def-border-style $brand-color-primary;
+				}
+			}
 		}
 	}
 }

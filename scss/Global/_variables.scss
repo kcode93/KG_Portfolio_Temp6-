@@ -1,6 +1,6 @@
 /** Colors **/
 $primary: hsl(195, 93%, 30%);
-$secondary: #272626;
+$secondary: hsl(0, 1%, 15%);
 //hsl(188, 92%, 10%);
 $brand-color-primary: hsl(72, 88%, 74%);
 $brand-color-secondary: hsl(72, 100%, 67%);
@@ -77,6 +77,8 @@ $work_card_img-sz: clamp(14.5rem, calc(1.53vw + 14.194rem), 15.5rem);
 $contact_form__submit-opacity: 0.7;
 
 /** Utilities **/
+//#modal
+$modal_content_color: hsl(210, 7%, 90%);
 
 /** Bootstrap Components **/
 
