@@ -45,7 +45,7 @@
 		}
 
 		.modal-header {
-			border-bottom: $def-border-sz $def-border-style $light;
+			border-bottom: $def-border-sz $def-border-style $secondary;
 			.modal-title {
 				color: $brand-color-primary !important;
 			}
@@ -81,14 +81,15 @@
 				border-left: $def-border-sz $def-border-style transparent;
 
 				&:hover {
-					border-bottom: $def-border-sz $def-border-style $brand-color-primary;
-					border-left: $def-border-sz $def-border-style $brand-color-primary;
+					border-bottom: $def-border-sz $def-border-style
+						$mobile-nav-hover-color;
+					border-left: $def-border-sz $def-border-style $mobile-nav-hover-color;
 				}
 			}
 		}
 
 		.modal-footer {
-			border-top: $def-border-sz $def-border-style $light;
+			border-top: $def-border-sz $def-border-style $secondary;
 
 			.btn-secondary {
 				&:hover,
