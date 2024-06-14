@@ -96,6 +96,33 @@
 			border: $progress_border_sz $def-border-style $brand-color-primary;
 		}
 	}
+
+	.skills_technologies__row {
+		.skills_box {
+			$skills_box_gap: 0.5rem;
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: $skills_box_gap;
+		}
+
+		.skills_icon_wrapper {
+			$skills_icon_wrapper-gap: 0.5rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: $skills_icon_wrapper-gap;
+
+			svg {
+				$icon-size: clamp(75%, 85%, 100%);
+				width: $icon-size;
+				height: $icon-size;
+			}
+		}
+	}
 }
 
 #work {
