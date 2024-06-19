@@ -1,10 +1,14 @@
 #about {
-	//font-size: $fs-md;
 	.about_text-container {
 		p {
 			max-width: $p-width;
 			text-wrap: pretty;
 		}
+	}
+
+	#about_work__CTA {
+		color: $brand-color-primary !important;
+		text-decoration: none;
 	}
 
 	.about_img {
@@ -29,14 +33,16 @@
 
 		.accordion-body {
 			li {
+				$accordion-li-mb: 0.5rem;
+				$accordion-li-br: 0.5rem;
 				color: $body-color;
 				background-color: $mobile-nav-hover-color;
-				margin-bottom: 0.5rem;
+				margin-bottom: $accordion-li-mb;
+				border-radius: $accordion-li-br;
 			}
 		}
 
 		.accordion-body {
-			//font-size: calc($fs-sm + 0.5rem);
 			background-color: $primary;
 		}
 	}

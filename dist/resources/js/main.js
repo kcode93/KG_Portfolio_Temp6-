@@ -38,6 +38,19 @@ $('#home .btn').on('click', function(event){
     }
 });
 
+//About_work__CTA smoot Scrolling
+$('#about_work__CTA').on('click', function(event){
+    if(this.hash !== ""){
+        event.preventDefault();
+        const hash = this.hash;
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 800, function(){
+            window.location.hash = hash;
+        });
+    }
+});
+
 //AOS Init
 AOS.init();
 
